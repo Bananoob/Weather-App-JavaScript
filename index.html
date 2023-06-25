@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');</style>    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+        <title>Weather App JS</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <i class="bx bx-left-arrow-alt"></i>
+                <br><h1>Weather App</h1><br>
+            </header>
+
+            <section id="inputPart" class="input-part">
+                <p class="info-txt"></p>
+                <div class="content">
+                    <input id="inputField" type="text" spellcheck="false" placeholder="Enter Your City Name" required>
+                    <div class="separator"></div>
+                    <br><button id="getDeviceLocation" onclick="getLocation()">Get device location</button><br>
+                </div>
+
+            </section>
+
+            <section class="weather-part">
+                
+                <div class="content">
+                    <img class="wImg">
+                    <h1 id="temperature"></h1>
+                    <div class="locationInfos" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                        <h2 id="locationInfo"></h2>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </body>
+
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
